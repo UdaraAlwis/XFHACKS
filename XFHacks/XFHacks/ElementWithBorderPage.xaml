@@ -32,7 +32,7 @@
 
             <StackLayout Grid.Row="0" Padding="0,0,0,0">
 
-                <!--  Button with a Border Width  -->
+                <!--  Button with a Border  -->
                 <Frame
                     Padding="0"
                     BackgroundColor="#2196F3"
@@ -49,7 +49,7 @@
                             Whatever the content you want to
                             place inside the Frame goes in here
                         -->
-                        <Button Margin="-2" Text="Button with Border" />
+                        <Button Margin="-3" Text="Button with Border" />
                     </Frame>
                 </Frame>
             </StackLayout>
@@ -58,20 +58,21 @@
             <StackLayout
                 Grid.Row="1"
                 Padding="0,0,0,0"
-                HeightRequest="100">
+                HeightRequest="70">
 
                 <!--  Image with a Border  -->
                 <Frame
                     Padding="0"
                     BackgroundColor="#2196F3"
-                    CornerRadius="7"
+                    CornerRadius="10"
                     HasShadow="False">
                     <Frame
                         Margin="2"
                         Padding="2"
                         BackgroundColor="White"
-                        CornerRadius="6"
-                        HasShadow="False">
+                        CornerRadius="8"
+                        HasShadow="False"
+                        IsClippedToBounds="True">
                         <!--
                             Whatever the content you want to
                             place inside the Frame goes in here
@@ -103,7 +104,10 @@
                             Whatever the content you want to
                             place inside the Frame goes in here
                         -->
-                        <Editor BackgroundColor="Transparent" TextColor="Black" />
+                        <Editor
+                            BackgroundColor="Transparent"
+                            Text="This is an Editor with a border feature.."
+                            TextColor="Black" />
                     </Frame>
                 </Frame>
             </StackLayout>
@@ -121,7 +125,7 @@
                         Margin="2"
                         Padding="2"
                         BackgroundColor="White"
-                        CornerRadius="6"
+                        CornerRadius="5"
                         HasShadow="False">
                         <!--
                             Whatever the content you want to
