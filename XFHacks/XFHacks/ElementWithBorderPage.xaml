@@ -36,18 +36,20 @@
                 <Frame
                     Padding="0"
                     BackgroundColor="#2196F3"
-                    CornerRadius="7"
+                    CornerRadius="15"
                     HasShadow="False">
                     <Frame
-                        Margin="1"
+                        Margin="2"
+                        Padding="0"
                         BackgroundColor="White"
-                        CornerRadius="6"
-                        HasShadow="False">
+                        CornerRadius="13"
+                        HasShadow="False"
+                        IsClippedToBounds="True">
                         <!--
                             Whatever the content you want to
                             place inside the Frame goes in here
                         -->
-                        <Button Text="Button with Border" />
+                        <Button Margin="-2" Text="Button with Border" />
                     </Frame>
                 </Frame>
             </StackLayout>
@@ -58,6 +60,33 @@
                 Padding="0,0,0,0"
                 HeightRequest="100">
 
+                <!--  Image with a Border  -->
+                <Frame
+                    Padding="0"
+                    BackgroundColor="#2196F3"
+                    CornerRadius="7"
+                    HasShadow="False">
+                    <Frame
+                        Margin="2"
+                        Padding="2"
+                        BackgroundColor="White"
+                        CornerRadius="6"
+                        HasShadow="False">
+                        <!--
+                            Whatever the content you want to
+                            place inside the Frame goes in here
+                        -->
+                        <Image Aspect="AspectFill" Source="{extensions:ImageResource XFHacks.Resources.abstractbackground1.jpg}" />
+                    </Frame>
+                </Frame>
+            </StackLayout>
+
+
+            <StackLayout
+                Grid.Row="2"
+                Padding="0,0,0,0"
+                HeightRequest="100">
+
                 <!--  Editor with a Border Width  -->
                 <Frame
                     Padding="0"
@@ -65,7 +94,8 @@
                     CornerRadius="7"
                     HasShadow="False">
                     <Frame
-                        Margin="1"
+                        Margin="2"
+                        Padding="2"
                         BackgroundColor="White"
                         CornerRadius="6"
                         HasShadow="False">
@@ -79,10 +109,7 @@
             </StackLayout>
 
 
-            <StackLayout
-                Grid.Row="2"
-                Padding="0,0,0,0"
-                HeightRequest="100">
+            <StackLayout Grid.Row="3" Padding="0,0,0,0">
 
                 <!--  Slider with a Border Width  -->
                 <Frame
@@ -91,7 +118,8 @@
                     CornerRadius="7"
                     HasShadow="False">
                     <Frame
-                        Margin="1"
+                        Margin="2"
+                        Padding="2"
                         BackgroundColor="White"
                         CornerRadius="6"
                         HasShadow="False">
