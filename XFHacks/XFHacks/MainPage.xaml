@@ -77,7 +77,15 @@
                 Text="Goto: Frame with Border Image"
                 TextColor="White" />
 
+            <Button
+                Grid.Row="10"
+                BackgroundColor="#2196F3"
+                Clicked="OnElementWithBorderClicked"
+                Text="Goto: Element with Border"
+                TextColor="White" />
+
             <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
