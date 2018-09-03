@@ -80,7 +80,7 @@
 
 
             <StackLayout
-                Grid.Row="2s"
+                Grid.Row="2"
                 Padding="0,0,0,0"
                 HeightRequest="100">
 
