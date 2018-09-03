@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XFHacks.FrameWithBorderWidth"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Frame with Border Width Page">
+
+    <!--  FOR ANDROID|IOS|UWP  -->
+
+    <Grid RowSpacing="20" VerticalOptions="Start">
+        <Grid.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="Android" Value="60,20,60,0" />
+                <On Platform="iOS" Value="55,20,55,0" />
+                <On Platform="UWP" Value="70,20,70,0" />
+            </OnPlatform>
+        </Grid.Padding>
+
+        <Label
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="Large"
+            HorizontalTextAlignment="Center"
+            Text="Welcome to Frame with Border Width!" />
+
+        <Grid
+            Grid.Row="1"
+            Grid.Column="0"
+            HorizontalOptions="Center"
+            WidthRequest="230">
+
+            <StackLayout Grid.Row="0" Padding="0,0,0,15">
+
+                <Label FontSize="Small" Text="Default Xamarin.Forms.Frame" />
+
+                <!--  Default Xamarin.Forms.Frame with a Border  -->
+                <Frame
+                    BorderColor="#2196F3"
+                    CornerRadius="7"
+                    HasShadow="False">
+                    <!--
+                        Whatever the content you want to
+                        place inside the Frame goes in here
+                    -->
+                    <Label
+                        FontSize="Small"
+                        HorizontalTextAlignment="Center"
+                        Text="No Border Width Available" />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Padding="0,0,0,0">
+
+                <Label FontSize="Small" Text="Improved Custom Frame" />
+
+                <!--  Frame with a Border Width  -->
+                <Frame
+                    Padding="0"
+                    BackgroundColor="#2196F3"
+                    CornerRadius="7"
+                    HasShadow="False">
+                    <Frame
+                        Margin="1"
+                        BackgroundColor="White"
+                        CornerRadius="6"
+                        HasShadow="False">
+                        <!--
+                            Whatever the content you want to
+                            place inside the Frame goes in here
+                        -->
+                        <Label
+                            FontSize="Small"
+                            HorizontalTextAlignment="Center"
+                            Text="Border Width = 1" />
+                    </Frame>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Padding="0,0,0,0">
+
+                <!--  Frame with a Border Width  -->
+                <Frame
+                    Padding="0"
+                    BackgroundColor="#2196F3"
+                    CornerRadius="7"
+                    HasShadow="False">
+                    <Frame
+                        Margin="2"
+                        BackgroundColor="White"
+                        CornerRadius="5"
+                        HasShadow="False">
+                        <!--
+                            Whatever the content you want to
+                            place inside the Frame goes in here
+                        -->
+                        <Label
+                            FontSize="Small"
+                            HorizontalTextAlignment="Center"
+                            Text="Border Width = 2" />
+                    </Frame>
+                </Frame>
+            </StackLayout>
+
+            <Label
+                Grid.Row="3"
+                FontSize="Micro"
+                Text="with any Border Width as you wish..." />
+
+            <StackLayout
+                Grid.Row="4"
+                Padding="0,0,0,0"
+                Orientation="Horizontal">
+
+                <!--  Frame with a Border Width  -->
+                <Frame
+                    Padding="0"
+                    BackgroundColor="#2196F3"
+                    CornerRadius="7"
+                    HasShadow="False"
+                    HeightRequest="50"
+                    HorizontalOptions="FillAndExpand">
+                    <Frame
+                        Margin="3"
+                        Padding="5"
+                        BackgroundColor="White"
+                        CornerRadius="5"
+                        HasShadow="False">
+                        <!--
+                            Whatever the content you want to
+                            place inside the Frame goes in here
+                        -->
+                    </Frame>
+                </Frame>
+
+                <!--  Frame with a Border Width  -->
+                <Frame
+                    Padding="0"
+                    BackgroundColor="#2196F3"
+                    CornerRadius="7"
+                    HasShadow="False"
+                    HeightRequest="50"
+                    HorizontalOptions="FillAndExpand">
+                    <Frame
+                        Margin="4"
+                        Padding="5"
+                        BackgroundColor="White"
+                        CornerRadius="5"
+                        HasShadow="False">
+                        <!--
+                            Whatever the content you want to
+                            place inside the Frame goes in here
+                        -->
+                    </Frame>
+                </Frame>
+
+                <!--  Frame with a Border Width  -->
+                <Frame
+                    Padding="0"
+                    BackgroundColor="#2196F3"
+                    CornerRadius="7"
+                    HasShadow="False"
+                    HeightRequest="50"
+                    HorizontalOptions="FillAndExpand">
+                    <Frame
+                        Margin="5"
+                        Padding="5"
+                        BackgroundColor="White"
+                        CornerRadius="5"
+                        HasShadow="False">
+                        <!--
+                            Whatever the content you want to
+                            place inside the Frame goes in here
+                        -->
+                    </Frame>
+                </Frame>
+
+                <!--  Frame with a Border Width  -->
+                <Frame
+                    Padding="0"
+                    BackgroundColor="#2196F3"
+                    CornerRadius="7"
+                    HasShadow="False"
+                    HeightRequest="50"
+                    HorizontalOptions="FillAndExpand">
+                    <Frame
+                        Margin="6"
+                        Padding="5"
+                        BackgroundColor="White"
+                        CornerRadius="5"
+                        HasShadow="False">
+                        <!--
+                            Whatever the content you want to
+                            place inside the Frame goes in here
+                        -->
+                    </Frame>
+                </Frame>
+
+                <!--  Frame with a Border Width  -->
+                <Frame
+                    Padding="0"
+                    BackgroundColor="#2196F3"
+                    CornerRadius="7"
+                    HasShadow="False"
+                    HeightRequest="50"
+                    HorizontalOptions="FillAndExpand">
+                    <Frame
+                        Margin="7"
+                        Padding="5"
+                        BackgroundColor="White"
+                        CornerRadius="5"
+                        HasShadow="False">
+                        <!--
+                            Whatever the content you want to
+                            place inside the Frame goes in here
+                        -->
+                    </Frame>
+                </Frame>
+            </StackLayout>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+        </Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+    </Grid>
+</ContentPage>

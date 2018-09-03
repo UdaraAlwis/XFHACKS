@@ -1,0 +1,91 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\abstractbackground1.jpg" />
+    <None Remove="Resources\abstractbackground2.jpg" />
+    <None Remove="Resources\dropdownicon.png" />
+    <None Remove="Resources\hidepasswordicon.png" />
+    <None Remove="Resources\infoicon.png" />
+    <None Remove="Resources\leftarrowicon.png" />
+    <None Remove="Resources\rightarrowicon.png" />
+    <None Remove="Resources\showpasswordicon.png" />
+    <None Remove="Resources\staricon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\abstractbackground1.jpg" />
+    <EmbeddedResource Include="Resources\abstractbackground2.jpg" />
+    <EmbeddedResource Include="Resources\hidepasswordicon.png" />
+    <EmbeddedResource Include="Resources\infoicon.png" />
+    <EmbeddedResource Include="Resources\rightarrowicon.png" />
+    <EmbeddedResource Include="Resources\leftarrowicon.png" />
+    <EmbeddedResource Include="Resources\dropdownicon.png" />
+    <EmbeddedResource Include="Resources\showpasswordicon.png" />
+    <EmbeddedResource Include="Resources\staricon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
+      <DependentUpon>*.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="EditorWithPlaceholderPage.xaml.cs">
+      <DependentUpon>EditorWithPlaceholderPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="FrameWithBorderWidth.xaml.cs">
+      <DependentUpon>FrameWithBorderWidth.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="LabelWithBorderPage.xaml.cs">
+      <DependentUpon>LabelWithBorderPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MainPage.xaml.cs">
+      <DependentUpon>*.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="PickerWithIconPage.xaml.cs">
+      <DependentUpon>PickerWithIconPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ButtonWithMoreControlPage.xaml.cs">
+      <DependentUpon>ButtonWithMoreControlPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ButtonWithIconPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="EditorWithBorderPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="EditorWithPlaceholderPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FrameWithBorderImage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FrameWithBorderWidth.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="InputElementsWithIconsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="LabelWithBorderPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PickerWithIconPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ButtonWithMoreControlPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ShowHidePasswordEntryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

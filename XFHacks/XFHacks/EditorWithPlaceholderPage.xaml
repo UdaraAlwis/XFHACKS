@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XFHacks.EditorWithPlaceholderPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:triggers="clr-namespace:XFHacks.Triggers;assembly=XFHacks"
+    Title="Editor with Placeholder Page">
+
+    <!--  FOR ANDROID|IOS|UWP  -->
+
+    <Grid
+        ColumnSpacing="0"
+        RowSpacing="20"
+        VerticalOptions="Start">
+        <Grid.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="Android" Value="30" />
+                <On Platform="iOS" Value="20" />
+                <On Platform="UWP" Value="20" />
+            </OnPlatform>
+        </Grid.Padding>
+
+        <Label
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="20"
+            HorizontalTextAlignment="Center"
+            Text="Welcome to Editor with a Placeholder Element!" />
+
+        <!--  Editor with a Placeholder  -->
+        <Grid
+            Grid.Row="1"
+            Grid.Column="0"
+            BackgroundColor="#b3ddff"
+            HeightRequest="100"
+            HorizontalOptions="Center"
+            WidthRequest="250">
+
+            <Label
+                InputTransparent="True"
+                Text="Type anything here..."
+                TextColor="Gray">
+                <Label.FontSize>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android" Value="17" />
+                        <On Platform="iOS" Value="17" />
+                        <On Platform="UWP" Value="15" />
+                    </OnPlatform>
+                </Label.FontSize>
+                <Label.Margin>
+                    <OnPlatform x:TypeArguments="Thickness">
+                        <On Platform="Android" Value="5,11,0,0" />
+                        <On Platform="iOS" Value="4,9,0,0" />
+                        <On Platform="UWP" Value="11,5,0,0" />
+                    </OnPlatform>
+                </Label.Margin>
+                <Label.Triggers>
+                    <DataTrigger
+                        Binding="{Binding Source={x:Reference editor}, Path=Text.Length}"
+                        TargetType="Label"
+                        Value="0">
+                        <DataTrigger.EnterActions>
+                            <triggers:VisibilityTriggerAction IsViewVisible="True" />
+                        </DataTrigger.EnterActions>
+                        <DataTrigger.ExitActions>
+                            <triggers:VisibilityTriggerAction IsViewVisible="False" />
+                        </DataTrigger.ExitActions>
+                    </DataTrigger>
+                    <DataTrigger
+                        Binding="{Binding Source={x:Reference editor}, Path=Text}"
+                        TargetType="Label"
+                        Value="{x:Null}">
+                        <DataTrigger.EnterActions>
+                            <triggers:VisibilityTriggerAction IsViewVisible="True" />
+                        </DataTrigger.EnterActions>
+                        <DataTrigger.ExitActions>
+                            <triggers:VisibilityTriggerAction IsViewVisible="False" />
+                        </DataTrigger.ExitActions>
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+            <Editor
+                x:Name="editor"
+                BackgroundColor="Transparent"
+                TextColor="Black" />
+
+        </Grid>
+
+        <Label
+            Grid.Row="2"
+            Grid.Column="0"
+            FontSize="15"
+            HorizontalTextAlignment="Center"
+            Text="This is done with no custom renderers, no platform specific code, and no third party libraries... only with pure out of the box Xamarin.Forms!"
+            VerticalOptions="End" />
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+    </Grid>
+
+</ContentPage>
