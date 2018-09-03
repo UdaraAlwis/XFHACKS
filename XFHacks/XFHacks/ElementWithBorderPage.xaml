@@ -55,20 +55,18 @@
             </StackLayout>
 
 
-            <StackLayout
-                Grid.Row="1"
-                Padding="0,0,0,0"
-                HeightRequest="70">
+            <StackLayout Grid.Row="1" Padding="0,0,0,0">
 
                 <!--  Image with a Border  -->
                 <Frame
                     Padding="0"
                     BackgroundColor="#2196F3"
                     CornerRadius="10"
-                    HasShadow="False">
+                    HasShadow="False"
+                    HeightRequest="70">
                     <Frame
                         Margin="2"
-                        Padding="2"
+                        Padding="0"
                         BackgroundColor="White"
                         CornerRadius="8"
                         HasShadow="False"
@@ -77,18 +75,15 @@
                             Whatever the content you want to
                             place inside the Frame goes in here
                         -->
-                        <Image Aspect="AspectFill" Source="{extensions:ImageResource XFHacks.Resources.abstractbackground1.jpg}" />
+                        <Image Aspect="AspectFill" Source="{extensions:ImageResource XFHacks.Resources.abstractbackground2.jpg}" />
                     </Frame>
                 </Frame>
             </StackLayout>
 
 
-            <StackLayout
-                Grid.Row="2"
-                Padding="0,0,0,0"
-                HeightRequest="100">
+            <StackLayout Grid.Row="2" Padding="0,0,0,0">
 
-                <!--  Editor with a Border Width  -->
+                <!--  Editor with a Border  -->
                 <Frame
                     Padding="0"
                     BackgroundColor="#2196F3"
@@ -106,6 +101,7 @@
                         -->
                         <Editor
                             BackgroundColor="Transparent"
+                            HeightRequest="70"
                             Text="This is an Editor with a border feature.."
                             TextColor="Black" />
                     </Frame>
