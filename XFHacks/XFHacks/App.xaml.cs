@@ -13,7 +13,12 @@ namespace XFHacks
 		{
 			InitializeComponent();
 
-			MainPage = new NavigationPage( new XFHacks.MainPage());
+		    // Initialize Live Reload.
+#if DEBUG
+		    LiveReload.Init();
+#endif
+
+            MainPage = new NavigationPage( new XFHacks.MainPage());
 		}
 
 		protected override void OnStart ()
