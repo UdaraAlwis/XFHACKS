@@ -111,26 +111,25 @@
 
             <StackLayout Grid.Row="3" Padding="0,0,0,0">
 
-                <!--  Slider with a Border Width  -->
+                <!--  ProgressBar with a Border  -->
                 <Frame
                     Padding="0"
                     BackgroundColor="#2196F3"
                     CornerRadius="7"
-                    HasShadow="False">
+                    HasShadow="False"
+                    HeightRequest="20">
                     <Frame
                         Margin="2"
-                        Padding="2"
-                        BackgroundColor="White"
+                        Padding="0"
+                        BackgroundColor="Purple"
                         CornerRadius="5"
-                        HasShadow="False">
+                        HasShadow="False"
+                        IsClippedToBounds="True">
                         <!--
                             Whatever the content you want to
                             place inside the Frame goes in here
                         -->
-                        <Slider
-                            Maximum="100"
-                            Minimum="0"
-                            Value="50" />
+                        <ProgressBar Progress="0.25" ProgressColor="Brown" />
                     </Frame>
                 </Frame>
             </StackLayout>
