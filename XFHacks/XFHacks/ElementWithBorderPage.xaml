@@ -33,7 +33,7 @@
             <!--  Button with a Border  -->
             <Frame
                 Padding="0"
-                BackgroundColor="DodgerBlue"
+                BackgroundColor="#7C4DFF"
                 CornerRadius="18"
                 HasShadow="False">
                 <Frame
@@ -49,7 +49,7 @@
                     -->
                     <Button
                         Margin="-2,-2,-2,-2"
-                        BackgroundColor="White"
+                        BackgroundColor="#0288D1"
                         HeightRequest="45"
                         Text="Button with Border"
                         TextColor="DodgerBlue"
@@ -61,7 +61,7 @@
             <!--  Button with a Border  -->
             <Frame
                 Padding="0"
-                BackgroundColor="DodgerBlue"
+                BackgroundColor="#7C4DFF"
                 CornerRadius="0"
                 HasShadow="False">
                 <Frame
@@ -77,7 +77,7 @@
                     -->
                     <Button
                         Margin="-2,-2,-2,-2"
-                        BackgroundColor="White"
+                        BackgroundColor="#0288D1"
                         HeightRequest="45"
                         Text="Button with Border"
                         TextColor="DodgerBlue"
@@ -89,7 +89,7 @@
             <!--  Image with a Border  -->
             <Frame
                 Padding="0"
-                BackgroundColor="Red"
+                BackgroundColor="#dd2c00"
                 CornerRadius="10"
                 HasShadow="False"
                 HeightRequest="70">
