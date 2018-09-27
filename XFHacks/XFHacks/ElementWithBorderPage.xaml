@@ -127,10 +127,11 @@
                 Padding="0"
                 BackgroundColor="#2196F3"
                 CornerRadius="10"
-                HasShadow="False">
+                HasShadow="False"
+                HeightRequest="80">
                 <Frame
                     Margin="8"
-                    Padding="6"
+                    Padding="0"
                     BackgroundColor="White"
                     CornerRadius="6"
                     HasShadow="False"
@@ -141,14 +142,15 @@
                     -->
                     <Grid>
                         <Image Aspect="AspectFill" Source="{extensions:ImageResource XFHacks.Resources.abstractbackground1.jpg}" />
-                        <StackLayout>
+                        <StackLayout Padding="6">
                             <Label
                                 FontSize="Small"
                                 Text="Wanna type here?"
-                                TextColor="#2196F3" />
+                                TextColor="White" />
                             <Entry
+                                BackgroundColor="Transparent"
                                 Placeholder="type here..."
-                                TextColor="#2196F3"
+                                TextColor="White"
                                 VerticalOptions="CenterAndExpand" />
                         </StackLayout>
                     </Grid>
