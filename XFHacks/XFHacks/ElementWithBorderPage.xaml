@@ -20,191 +20,143 @@
         <Label
             Grid.Row="0"
             Grid.Column="0"
-            FontSize="Large"
+            FontSize="20"
             HorizontalTextAlignment="Center"
             Text="Welcome to Element with Border and Background!" />
 
-        <ScrollView Grid.Row="1" Grid.Column="0">
+        <StackLayout
+            Grid.Row="1"
+            Grid.Column="0"
+            HorizontalOptions="Center"
+            WidthRequest="260">
 
-            <StackLayout HorizontalOptions="Center" WidthRequest="260">
-
-                <!--  Button with a Border  -->
+            <!--  Image with a Border  -->
+            <Frame
+                Padding="0"
+                BackgroundColor="#2196F3"
+                CornerRadius="10"
+                HasShadow="False"
+                HeightRequest="70">
                 <Frame
+                    Margin="8"
                     Padding="0"
-                    BackgroundColor="#3F51B5"
-                    CornerRadius="0"
-                    HasShadow="False">
-                    <Frame
-                        Margin="4"
-                        Padding="0"
-                        BackgroundColor="White"
-                        CornerRadius="0"
-                        HasShadow="False"
-                        IsClippedToBounds="True">
-                        <!--
-                            Whatever the content you want to
-                            place inside the Frame goes in here
-                        -->
-                        <Button
-                            Margin="-2,-2,-2,-2"
-                            BackgroundColor="#03A9F4"
-                            HeightRequest="45"
-                            Text="Button with Border"
+                    BackgroundColor="White"
+                    CornerRadius="6"
+                    HasShadow="False"
+                    IsClippedToBounds="True">
+                    <!--
+                        Whatever the content you want to
+                        place inside the Frame goes in here
+                    -->
+                    <Grid>
+                        <Image Aspect="AspectFill" Source="{extensions:ImageResource XFHacks.Resources.abstractbackground1.jpg}" />
+                        <Label
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center"
+                            Text="Image with Border!"
                             TextColor="White"
                             VerticalOptions="Center" />
-                    </Frame>
+                    </Grid>
                 </Frame>
+            </Frame>
 
-                <StackLayout Orientation="Horizontal">
 
-                    <!--  Button with a Border  -->
-                    <Frame
-                        Padding="0"
-                        BackgroundColor="#03A9F4"
-                        CornerRadius="22"
-                        HasShadow="False"
-                        HorizontalOptions="FillAndExpand">
-                        <Frame
-                            Margin="4"
-                            Padding="0"
-                            BackgroundColor="White"
-                            CornerRadius="18"
-                            HasShadow="False"
-                            IsClippedToBounds="True">
-                            <!--
-                                Whatever the content you want to
-                                place inside the Frame goes in here
-                            -->
-                            <Button
-                                Margin="-2,-2,-2,-2"
-                                BackgroundColor="#7C4DFF"
-                                FontAttributes="Bold"
-                                HeightRequest="45"
-                                Text="Button!"
-                                TextColor="White"
-                                VerticalOptions="Center" />
-                        </Frame>
-                    </Frame>
-
-                    <!--  Button with a Border  -->
-                    <Frame
-                        Padding="0"
-                        BackgroundColor="#03A9F4"
-                        CornerRadius="22"
-                        HasShadow="False"
-                        HorizontalOptions="FillAndExpand">
-                        <Frame
-                            Margin="4"
-                            Padding="0"
-                            BackgroundColor="White"
-                            CornerRadius="18"
-                            HasShadow="False"
-                            IsClippedToBounds="True">
-                            <!--
-                                Whatever the content you want to
-                                place inside the Frame goes in here
-                            -->
-                            <Button
-                                Margin="-2,-2,-2,-2"
-                                BackgroundColor="#3F51B5"
-                                FontAttributes="Bold"
-                                HeightRequest="45"
-                                Text="Button!"
-                                TextColor="White"
-                                VerticalOptions="Center" />
-                        </Frame>
-                    </Frame>
-                </StackLayout>
-
-                <!--  Image with a Border  -->
+            <!--  Label with Background  -->
+            <Frame
+                Padding="0"
+                BackgroundColor="#2196F3"
+                CornerRadius="0"
+                HasShadow="False"
+                HeightRequest="50">
                 <Frame
+                    Margin="8"
                     Padding="0"
-                    BackgroundColor="#E91E63"
-                    CornerRadius="12"
+                    BackgroundColor="White"
+                    CornerRadius="0"
                     HasShadow="False"
-                    HeightRequest="70">
-                    <Frame
-                        Margin="4"
-                        Padding="0"
-                        BackgroundColor="White"
-                        CornerRadius="10"
-                        HasShadow="False"
-                        IsClippedToBounds="True">
-                        <!--
-                            Whatever the content you want to
-                            place inside the Frame goes in here
-                        -->
-                        <Grid>
-                            <Image Aspect="AspectFill" Source="{extensions:ImageResource XFHacks.Resources.abstractbackground2.jpg}" />
-                            <Label
-                                FontAttributes="Bold"
-                                FontSize="Medium"
-                                HorizontalTextAlignment="Center"
-                                Text="Image with Border!"
-                                TextColor="White"
-                                VerticalOptions="Center" />
-                        </Grid>
-                    </Frame>
+                    IsClippedToBounds="True">
+                    <!--
+                        Whatever the content you want to
+                        place inside the Frame goes in here
+                    -->
+                    <Grid>
+                        <Image Aspect="AspectFill" Source="{extensions:ImageResource XFHacks.Resources.abstractbackground1.jpg}" />
+                        <Label
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center"
+                            Text="Label with Background!"
+                            TextColor="White"
+                            VerticalOptions="Center" />
+                    </Grid>
                 </Frame>
+            </Frame>
 
-
-                <!--  Editor with a Border  -->
+            <!--  Custom Element with a Border  -->
+            <Frame
+                Padding="0"
+                BackgroundColor="#2196F3"
+                CornerRadius="10"
+                HasShadow="False">
                 <Frame
-                    Padding="0"
-                    BackgroundColor="#FF5722"
-                    CornerRadius="9"
-                    HasShadow="False">
-                    <Frame
-                        Margin="8"
-                        Padding="6"
-                        BackgroundColor="White"
-                        CornerRadius="6"
-                        HasShadow="False">
-                        <!--
-                            Whatever the content you want to
-                            place inside the Frame goes in here
-                        -->
-                        <Editor
-                            BackgroundColor="Transparent"
-                            HeightRequest="80"
-                            Text="This is an Editor element with a border around it.."
-                            TextColor="Black" />
-                    </Frame>
+                    Margin="8"
+                    Padding="6"
+                    BackgroundColor="White"
+                    CornerRadius="6"
+                    HasShadow="False"
+                    IsClippedToBounds="True">
+                    <!--
+                        Whatever the content you want to
+                        place inside the Frame goes in here
+                    -->
+                    <StackLayout>
+                        <Label
+                            FontSize="Small"
+                            Text="Wanna type here?"
+                            TextColor="#2196F3" />
+                        <Entry
+                            Placeholder="type here..."
+                            TextColor="#2196F3"
+                            VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
                 </Frame>
+            </Frame>
 
 
-                <!--  ProgressBar with a Border  -->
+            <!--  Custom Element with a Border and Background  -->
+            <Frame
+                Padding="0"
+                BackgroundColor="#2196F3"
+                CornerRadius="10"
+                HasShadow="False">
                 <Frame
-                    Padding="0"
-                    BackgroundColor="#E91E63"
-                    CornerRadius="8"
-                    HasShadow="False">
-                    <Frame
-                        Margin="6"
-                        Padding="6"
-                        BackgroundColor="White"
-                        CornerRadius="3"
-                        HasShadow="False"
-                        IsClippedToBounds="True">
-                        <!--
-                            Whatever the content you want to
-                            place inside the Frame goes in here
-                        -->
+                    Margin="8"
+                    Padding="6"
+                    BackgroundColor="White"
+                    CornerRadius="6"
+                    HasShadow="False"
+                    IsClippedToBounds="True">
+                    <!--
+                        Whatever the content you want to
+                        place inside the Frame goes in here
+                    -->
+                    <Grid>
+                        <Image Aspect="AspectFill" Source="{extensions:ImageResource XFHacks.Resources.abstractbackground1.jpg}" />
                         <StackLayout>
                             <Label
                                 FontSize="Small"
                                 Text="Wanna type here?"
-                                TextColor="#E91E63" />
+                                TextColor="#2196F3" />
                             <Entry
                                 Placeholder="type here..."
-                                TextColor="#E91E63"
+                                TextColor="#2196F3"
                                 VerticalOptions="CenterAndExpand" />
                         </StackLayout>
-                    </Frame>
+                    </Grid>
                 </Frame>
+            </Frame>
 
-            </StackLayout>
-        </ScrollView>
+        </StackLayout>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
