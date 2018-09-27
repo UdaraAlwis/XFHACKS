@@ -138,6 +138,7 @@
                             <Image Aspect="AspectFill" Source="{extensions:ImageResource XFHacks.Resources.abstractbackground2.jpg}" />
                             <Label
                                 FontAttributes="Bold"
+                                FontSize="Medium"
                                 HorizontalTextAlignment="Center"
                                 Text="Image with Border!"
                                 TextColor="White"
@@ -155,7 +156,7 @@
                     HasShadow="False">
                     <Frame
                         Margin="8"
-                        Padding="2"
+                        Padding="6"
                         BackgroundColor="White"
                         CornerRadius="6"
                         HasShadow="False">
@@ -165,39 +166,11 @@
                         -->
                         <Editor
                             BackgroundColor="Transparent"
-                            FontAttributes="Bold"
                             HeightRequest="80"
-                            Text="This is an Editor element with a nice border around it.."
+                            Text="This is an Editor element with a border around it.."
                             TextColor="Black" />
                     </Frame>
                 </Frame>
-
-
-                <!--  ProgressBar with a Border  -->
-                <Frame
-                    Padding="0"
-                    BackgroundColor="#E91E63"
-                    CornerRadius="7"
-                    HasShadow="False"
-                    HeightRequest="20">
-                    <Frame
-                        Margin="2"
-                        Padding="0"
-                        CornerRadius="5"
-                        HasShadow="False"
-                        IsClippedToBounds="True">
-                        <!--
-                            Whatever the content you want to
-                            place inside the Frame goes in here
-                        -->
-                        <ProgressBar
-                            Margin="5,0,5,0"
-                            Progress="0.25"
-                            ProgressColor="#FFC107"
-                            VerticalOptions="CenterAndExpand" />
-                    </Frame>
-                </Frame>
-
 
 
                 <!--  ProgressBar with a Border  -->
